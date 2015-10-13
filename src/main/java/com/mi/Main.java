@@ -61,7 +61,8 @@ public class Main {
 
         if (settings.userAgent != null) {
             System.out.println("Set User-Agent: " + settings.userAgent);
-            cap.setBrowserName(settings.userAgent);
+            cap.setCapability("phantomjs.page.settings.userAgent", settings.userAgent);
+//            cap.setBrowserName(settings.userAgent);
         }
 
         System.out.println("Path to PhantomJS executable: " + settings.pathToPhantomJS);
