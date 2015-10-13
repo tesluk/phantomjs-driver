@@ -1,5 +1,6 @@
 *.class
 res/
+target/
 
 # IDE files
 *.iml
